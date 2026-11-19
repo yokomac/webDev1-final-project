@@ -26,6 +26,11 @@
     "@types/jquery": "^4.0.1",
     "concurrently": "^10.0.7",
     "five-server": "^0.4.5",
+    "postcss": "^8.5.33",
     "sass": "^1.108.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
   }
 }
