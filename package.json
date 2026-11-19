@@ -1,0 +1,31 @@
+{
+  "name": "webdev1-final-project",
+  "version": "1.0.0",
+  "description": "**Course:** Web Development Fundamentals   **Project:** Interactive Community Events & Activity Planner   **Difficulty:** Intermediate (medium)   **Suggested duration:** 2 weeks (10 working days)   **Team size:** 2–3 students; individual submissions may be permitted",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss/styles.scss:src/css/styles.css",
+    "sass:watch": "sass --watch src/scss/styles.scss:src/css/styles.css",
+    "server": "npx five-server --open=/src/index.html",
+    "dev": "concurrently -n \"sass,server\" -c \"cyan,magenta\" \"npm run sass:watch\" \"npm run server\"",
+    "build": "npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yokomac/webDev1-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yokomac/webDev1-final-project/issues"
+  },
+  "homepage": "https://github.com/yokomac/webDev1-final-project#readme",
+  "devDependencies": {
+    "@types/jquery": "^4.0.1",
+    "concurrently": "^10.0.7",
+    "five-server": "^0.4.5",
+    "sass": "^1.108.2"
+  }
+}
