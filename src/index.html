@@ -1,5 +1,215 @@
 <!doctype html>
 <html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Hub</title>
+  <script src="/libs/jQuery.4.1.0.js"></script>
+  <link rel="stylesheet" href="/src/css/output.css">
+</head>
+<body class="bg-blue-100">
+  <div id="header"></div>
+  <main class="my-6 mx-12 md:mx-34">
+    <section class="mb-5">
+      <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-xl text-white mb-6 px-9 py-2">
+        <p class="text-blue-200 mb-3">✦ DISCOVER CONNECT BELONG.</p>
+        <h1 class="font-bold text-3xl mb-1">Make memories.</h1>
+        <h1 class="font-bold text-3xl mb-4">Find your next experience.</h1>
+        <p class="text-blue-200 mb-4">
+          Explore exciting local events, meet new people, and be part of be part of something great in your community.
+        </p>
+        <button class="bg-white text-blue-600 font-semibold px-5 py-2 rounded-xl mb-4" >Explore events ↗</button>
+      </div>
+
+      <div class="bg-white rounded-xl text-gray-400 p-3 flex gap-4">
+        <input id="search" placeholder="Search events, activities, or keywords..." class="outline-2 outline-gray-200 rounded-md px-4 py-2 w-full">
+        <select id="category" class="text-gray-500 outline-2 outline-gray-200 rounded-md font-semibold px-4 py-2">
+          <option value="default">All Categories</option>
+          <option value="arts&culture">Arts & Culture</option>
+          <option value="technology">Technology</option>
+          <option value="music">Music</option>
+          <option value="community">Community</option>
+          <option value="wellness">Wellness</option>
+          <option value="sports">Sports</option>
+          <option value="education">Education</option>
+        </select>
+        <button class="bg-blue-600 rounded-xl text-white font-semibold px-4 py-2 shrink-0">Search Events</button>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <h2 class="text-3xl font-bold">Explore upcoming events</h2>
+          <p class="text-gray-500">Find something you'll love. There is an event for everyone.</p>
+        </div>
+        <a class="text-blue-600 font-bold">View all events →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-blue-300 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">12</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">📷</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Art & Culture</p>
+            <h3 class="text-lg font-bold">Photography Walk</h3>
+            <p class="text-gray-400">✦ Stanley Park Vancouver</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-blue-900 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">15</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">💻</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Technology</p>
+            <h3 class="text-lg font-bold">Web Design Workshop</h3>
+            <p class="text-gray-400">✦ Downtown Community Center</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-violet-300 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">18</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">🎸</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Music</p>
+            <h3 class="text-lg font-bold">Friday Night Live Music</h3>
+            <p class="text-gray-400">✦ Granville Arts Hall</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-orange-300 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">20</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">👩‍🍳</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Community</p>
+            <h3 class="text-lg font-bold">Cooking Together</h3>
+            <p class="text-gray-400">✦ The Gathering Kitchen</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-green-300 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">23</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">🧘</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Wellness</p>
+            <h3 class="text-lg font-bold">Morning Yoga in the Park</h3>
+            <p class="text-gray-400">✦ Sunset Beach Park</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-blue-400 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">25</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">🏃</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Sports</p>
+            <h3 class="text-lg font-bold">Weekend 5K Fun Run</h3>
+            <p class="text-gray-400">✦ Queen Elizabeth Park</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-purple-300 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">27</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">🔭</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Education</p>
+            <h3 class="text-lg font-bold">Science Discovery Night</h3>
+            <p class="text-gray-400">✦ Discovery Science Centre</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow">
+          <div class="bg-red-200 rounded-t-xl flex h-46">
+            <div class="bg-white rounded-xl w-15 h-15 flex flex-col items-center justify-center px-3 py-1.5 m-3">
+              <h4 class="text-lg font-bold">29</h4>
+              <p class="text-xs text-gray-400 font-bold">APR</p>
+            </div>
+            <span class="text-8xl shrink-0 text-center w-4/6 mt-10">🎨</span>
+          </div>
+          <div class="mx-4 py-4 flex flex-col gap-1">
+            <p class="bg-blue-100 text-blue-600 font-bold text-sm px-2 py-1 w-fit rounded-lg my-2">Art & Culture</p>
+            <h3 class="text-lg font-bold">Local Artists Showcase</h3>
+            <p class="text-gray-400">✦ Eastside Gallery</p>
+            <div class="h-[1px] w-full bg-gray-300 my-4"></div>
+            <div class="flex justify-between">
+              <a class="text-blue-600 font-bold">View details →</a>
+              <button class="outline-1 outline-gray-300 rounded-lg w-7 h-7 text-gray-400 font-bold p-1">♡</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="/src/js/jQuery.js"></script>
+</html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
