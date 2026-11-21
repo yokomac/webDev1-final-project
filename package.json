@@ -7,7 +7,9 @@
     "sass": "sass src/scss/styles.scss:src/css/styles.css",
     "sass:watch": "sass --watch src/scss/styles.scss:src/css/styles.css",
     "server": "npx five-server --open=/src/index.html",
-    "dev": "concurrently -n \"sass,server\" -c \"cyan,magenta\" \"npm run sass:watch\" \"npm run server\"",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch --poll",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css",
+    "dev": "concurrently -n \"sass,tailwind,server\" -c \"cyan,yellow,magenta\" \"npm run sass:watch\" \"npm run tailwind:watch\" \"npm run server\"",
     "build": "npm run sass"
   },
   "repository": {
